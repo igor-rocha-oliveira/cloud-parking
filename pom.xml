@@ -17,11 +17,11 @@
 		<java.version>17</java.version>
 		<springfox-swagger.version>2.9.2</springfox-swagger.version>
 		<modelmapper.version>2.3.5</modelmapper.version>
+		<testecontainers.version>1.17.6</testecontainers.version>
 	</properties>
 	<dependencies>
 
 		<!--Spring Initializer-->
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -34,7 +34,6 @@
 		</dependency>
 
 		<!--ModelMapper-->
-
 		<dependency>
 			<groupId>org.modelmapper</groupId>
 			<artifactId>modelmapper</artifactId>
@@ -42,7 +41,6 @@
 		</dependency>
 
 		<!--Swagger-->
-
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
@@ -55,7 +53,6 @@
 		</dependency>
 
 		<!--SpringFramework teste e REST Assured-->
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -75,6 +72,20 @@
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
+		</dependency>
+
+		<!--Testes Containers-->
+		<dependency>
+			<groupId>org.testcontainers</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>${testecontainers.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!--Spring Security-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 	</dependencies>
 
